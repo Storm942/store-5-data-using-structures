@@ -1,0 +1,59 @@
+
+#include <stdio.h>
+#include<string.h>
+typedef struct address{
+    int house[20];
+    int block[20];
+    char city[20];
+    char state[20];
+}s;
+void printstruct(struct address add); 
+int main() {
+    s st[5];
+    printf("Enter data 1:\n");
+    scanf("%d",&st[0].house);
+    scanf("%d",&st[0].block);
+    scanf("%s",st[0].city);
+    scanf("%s",st[0].state);
+    
+    printf("Enter data 2:\n");
+    scanf("%d",&st[1].house);
+    scanf("%d",&st[1].block);
+    scanf("%s",st[1].city);
+    scanf("%s",st[1].state);
+    
+    printf("Enter data 3:\n");
+    scanf("%d",&st[2].house);
+    scanf("%d",&st[2].block);
+    scanf("%s",st[2].city);
+    scanf("%s",st[2].state);
+    
+    printf("Enter data 4:\n");
+    scanf("%d",&st[3].house);
+    scanf("%d",&st[3].block);
+    scanf("%s",st[3].city);
+    scanf("%s",st[3].state);
+    
+    printf("Enter data 5:\n");
+    scanf("%d",&st[4].house);
+    scanf("%d",&st[4].block);
+    scanf("%s",st[4].city);
+    scanf("%s",st[4].state);
+    
+    printstruct(st[0]);
+    printstruct(st[1]);
+    printstruct(st[2]);
+    printstruct(st[3]);
+    printstruct(st[4]);
+    return 0;
+}
+void printstruct(struct address add)
+{
+    printf("Address is : %d, %d, %s, %s",add.house,add.block,add.city,add.state);
+}
+
+
+
+
+
+
